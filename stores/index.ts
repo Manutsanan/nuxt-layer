@@ -1,19 +1,19 @@
-import { defineStore } from 'pinia'
+import { defineStore } from "pinia";
 
 export const useStore = defineStore({
-  id: 'main',
+  id: "main",
   state: () => ({
-    sharedData: 'default data'
+    sharedData: "default data",
   }),
   actions: {
     updateSharedData(data: string) {
-      this.sharedData = data
-    }
+      this.sharedData = data;
+    },
   },
   getters: {
     getData(state) {
-      return state.sharedData
-    }
+      return state.sharedData;
+    },
   },
   persist: true,
-})
+});

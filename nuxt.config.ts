@@ -2,7 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
 
-  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@pinia-plugin-persistedstate/nuxt'],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@pinia/nuxt",
+    "@pinia-plugin-persistedstate/nuxt",
+  ],
 
-  extends: ['./domains/users', './domains/products'],
-})
+  extends: ["./domains/users", "./domains/products"],
+});
