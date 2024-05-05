@@ -9,6 +9,8 @@
 </template>
 
 <script setup lang="ts">
+import { useStore } from "../../../../stores/index";
+
 const store = useStore();
 
 const data = store.getData;
